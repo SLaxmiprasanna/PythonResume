@@ -1,0 +1,114 @@
+Name = 'SANDUMALLA LAXMI PRASANNA'
+Title = 'Finance | Equity Research Analyst | Analytics |'
+Contact = 'Hyderabad,Telangana\n949-XXX-XXXX\nprasannasandumallaATgmailDOTcom\nlinkedin.com/in/laxmiprasannasandumalla\ngithub.com/SLaxmiprasanna'
+
+ProjectsHeader = 'PROJECTS/RESEARCH PAPER'
+ProjectOneTitle = 'Stock Market Prediction'
+ProjectOneDesc = '- Forecasted stocks of Uber using models of Machine learning & Deep learning\n- Python\n- SVM,Arima,Holt-Winters'
+ProjectTwoTitle = 'COVID-19\n'
+ProjectTwoDesc = '- Predicting the next day total number of covid cases globally\n- R Language\n- Used like Linear,Exponential,Quadratic with Daily seasonality'
+ProjectThreeTitle = 'Its My Meal Time'
+ProjectThreeDesc = '- Online site where we can book seats and banquet \n- PHP & MySQL'
+ResearchPaperTitle = 'Stock Market Prediction using ML & DL'
+ResearchPaperTime = '02/2020'
+ResearchPaperDesc = '-Had given presentation in International Conference ICBTDE in FEB 2020\n-Forecasted stocks for next year using few models\n- Python'
+
+WorkHeader = 'EXPERIENCE'
+WorkOneTitle = 'Soochi Technology India Pvt Ltd / Business Analyst - Marketing'
+WorkOneTime = '5/2020 - Present'
+WorkOneDesc = '- Working on digital marketing platforms\n- Performing Market Research\n- Dynamic web scraping,do analysis and draw insights'
+WorkTwoTitle = 'Harvard Business School / Ascend member'
+WorkTwoTime = '06/2020 - Present'
+WorkTwoDesc = '- Has been participating in different surveys and research projects\n'
+
+EduHeader = 'EDUCATION'
+EduOneTitle = 'ITM Business School, Post Graduate Diploma in Management'
+EduOneTime = '2019 - 2021'
+EduOneDesc = 'Finance'
+EduTwoTitle = 'BVRIT Hyderabad College of Engineering for Women, BTech'
+EduTwoTime = '2014 - 2018'
+EduTwoDesc = 'Information Technology'
+
+SkillsHeader = 'Skills'
+SkillsDesc = '- Python\n- R\n- Tableau \n- Data Visualization\n- Data Cleaning\n- Command Line\n- Git and Version Control\n- MySQL\n- Twitter API\n- Probability/Statistics\n- Facebook Graph API\n- Excel'
+ExtrasTitle = 'Finance\nData Scientist Path\n'
+ExtrasDesc = 'Learned Managing portfolio\n- Data science\n- languages\n- machine learning \n- scraping'
+
+
+# Setting style for bar graphs
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+# set font
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = 'STIXGeneral'
+
+fig, ax = plt.subplots(figsize=(8.5, 11))
+
+# Decorative Lines
+ax.axvline(x=.5, ymin=0, ymax=1, color='#007ACC', alpha=0.0, linewidth=50)
+plt.axvline(x=.99, color='#000000', alpha=0.5, linewidth=300)
+plt.axhline(y=.88, xmin=0, xmax=1, color='#ffffff', linewidth=3)
+
+# set background color
+ax.set_facecolor('white')
+
+# remove axes
+plt.axis('off')
+
+# add text
+#plt.annotate(Header, (.02,.98), weight='regular', fontsize=8, alpha=.6)
+plt.annotate(Name, (.02,.94), weight='bold', fontsize=15)
+plt.annotate(Title, (.02,.91), weight='regular', fontsize=14)
+plt.annotate(Contact, (.7,.906), weight='regular', fontsize=8, color='#ffffff')
+
+plt.annotate(ProjectsHeader, (.02,.86), weight='bold', fontsize=10, color='#58C1B2')
+
+plt.annotate(ProjectOneTitle, (.02,.832), weight='bold', fontsize=10)
+plt.annotate(ProjectOneDesc, (.04,.78), weight='regular', fontsize=9)
+
+plt.annotate(ProjectTwoTitle, (.02,.735), weight='bold', fontsize=10)
+plt.annotate(ProjectTwoDesc, (.04,.70), weight='regular', fontsize=9)
+
+plt.annotate(ProjectThreeTitle, (.02,.672), weight='bold', fontsize=10)
+plt.annotate(ProjectThreeDesc, (.04,.638), weight='regular', fontsize=9)
+
+plt.annotate(ResearchPaperTitle,(.02,.615), weight='bold', fontsize=10)
+plt.annotate(ResearchPaperTime,(.02,.600), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(ResearchPaperDesc,(.02,.550), weight='regular', fontsize=9)
+             
+plt.annotate(WorkHeader, (.02,.49), weight='bold', fontsize=10, color='#58C1B2')
+plt.annotate(WorkOneTitle, (.02,.470), weight='bold', fontsize=10)
+plt.annotate(WorkOneTime, (.02,.450), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(WorkOneDesc, (.04,.400), weight='regular', fontsize=9)
+
+plt.annotate(WorkTwoTitle, (.02,.376), weight='bold', fontsize=10)
+plt.annotate(WorkTwoTime, (.02,.355), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(WorkTwoDesc, (.04,.323), weight='regular', fontsize=9)
+#plt.annotate(WorkThreeTitle, (.02,.295), weight='bold', fontsize=10)
+#plt.annotate(WorkThreeTime, (.02,.28), weight='regular', fontsize=9, alpha=.6)
+#plt.annotate(WorkThreeDesc, (.04,.247), weight='regular', fontsize=9)
+
+plt.annotate(EduHeader, (.02,.195), weight='bold', fontsize=10, color='#58C1B2')
+plt.annotate(EduOneTitle, (.02,.155), weight='bold', fontsize=10)
+plt.annotate(EduOneTime, (.02,.14), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(EduOneDesc, (.04,.125), weight='regular', fontsize=9)
+plt.annotate(EduTwoTitle, (.02,.08), weight='bold', fontsize=10)
+plt.annotate(EduTwoTime, (.02,.065), weight='regular', fontsize=9, alpha=.6)
+plt.annotate(EduTwoDesc, (.04,.046), weight='regular', fontsize=9)
+
+plt.annotate(SkillsHeader, (.7,.8), weight='bold', fontsize=10, color='#ffffff')
+plt.annotate(SkillsDesc, (.7,.56), weight='regular', fontsize=10, color='#ffffff')
+plt.annotate(ExtrasTitle, (.7,.43), weight='bold', fontsize=10, color='#ffffff')
+plt.annotate(ExtrasDesc, (.7,.345), weight='regular', fontsize=10, color='#ffffff')
+plt.annotate(CodeTitle, (.7,.2), weight='bold', fontsize=10, color='#ffffff')
+
+#add qr code
+from matplotlib.offsetbox import TextArea, DrawingArea, OffsetImage, AnnotationBbox
+import matplotlib.image as mpimg
+arr_code = mpimg.imread(r'C:\Users\User\Desktop\default_qrcode.png')
+imagebox = OffsetImage(arr_code, zoom=0.5)
+ab = AnnotationBbox(imagebox, (0.84, 0.12))
+ax.add_artist(ab)
+
+plt.savefig('resumeexample.png', dpi=300, bbox_inches='tight')
